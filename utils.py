@@ -15,9 +15,7 @@ from transformers import (
     AutoModelForCausalLM,
     BitsAndBytesConfig,
 )
-
 import time
-
 
 def lora_to_base(model):
     model.base_model.disable_adapter_layers()
